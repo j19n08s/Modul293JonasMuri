@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Ticketbestellung – EventHub</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Ticketbestellung</h1>
+<p>Bitte füllen Sie das Formular aus</p>
+</header>
+
+<main>
+
+<section class="formular">
+
+<h2>Tickets bestellen</h2>
+
+<form action="#bestaetigung">
+
+<fieldset>
+<legend>Persönliche Angaben</legend>
+
+<label>
+Herr
+<input type="radio" name="anrede" required>
+</label>
+
+<label>
+Frau
+<input type="radio" name="anrede">
+</label>
+
+<label for="vorname">Vorname *</label>
+<input type="text" id="vorname" required>
+
+<label for="nachname">Nachname *</label>
+<input type="text" id="nachname" required>
+
+<label for="geburt">Geburtsdatum *</label>
+<input type="date" id="geburt" required>
+
+</fieldset>
+
+
+<fieldset>
+<legend>Kontakt</legend>
+
+<label for="email">E-Mail *</label>
+<input type="email" id="email" required>
+
+<label for="telefon">Telefon</label>
+<input type="tel" id="telefon">
+
+</fieldset>
+
+
+<fieldset>
+<legend>Adresse</legend>
+
+<label for="strasse">Strasse *</label>
+<input type="text" id="strasse" required>
+
+<label for="plz">PLZ *</label>
+<input type="text" id="plz" required>
+
+<label for="ort">Ort *</label>
+<input type="text" id="ort" required>
+
+<label for="land">Land *</label>
+
+<select id="land" required>
+<option value="">Bitte wählen</option>
+<option>Schweiz</option>
+<option>Deutschland</option>
+<option>Österreich</option>
+<option>Andere</option>
+</select>
+
+</fieldset>
+
+
+<fieldset>
+<legend>Ticketdetails</legend>
+
+<label for="event">Event auswählen *</label>
+
+<select id="event" required>
+<option value="">Bitte wählen</option>
+<option>Sommerfest 2026 – Basel (12. Juni 2026)</option>
+<option>Open-Air Konzert – Zürich (25. Juli 2026)</option>
+<option>Food Festival – Bern (5. August 2026)</option>
+<option>Sportevent 2026 – Luzern (18. Juni 2026)</option>
+<option>Open-Air Kino – Winterthur (2. Juli 2026)</option>
+<option>Kunst Ausstellung – Basel (10. Juli 2026)</option>
+<option>Tech Messe – Zürich (22. August 2026)</option>
+<option>Wochenmarkt Spezial – Aarau (30. August 2026)</option>
+<option>Comedy Night – St. Gallen (5. September 2026)</option>
+<option>Kreativ Workshop – Bern (12. September 2026)</option>
+</select>
+
+<br><br>
+
+<label>
+<input type="radio" name="ticket" required>
+Standard-Ticket
+</label>
+
+<label>
+<input type="radio" name="ticket">
+VIP-Ticket (+ CHF 50.–)
+</label>
+
+<br><br>
+
+<label for="anzahl">Anzahl Tickets (max. 10)</label>
+<input type="number" id="anzahl" min="1" max="10" required>
+
+</fieldset>
+
+
+<fieldset>
+<legend>Zusätzlich</legend>
+
+<label>
+<input type="checkbox">
+Newsletter abonnieren
+</label>
+
+<label>
+<input type="checkbox" required>
+AGB akzeptieren
+<a href="AGBs.html" target="_blank">(AGB anzeigen)</a>
+</label>
+
+<label for="bemerkung">Bemerkungen</label>
+<textarea id="bemerkung" rows="4"></textarea>
+
+</fieldset>
+
+<button type="submit">Bestellung absenden</button>
+
+<p><a href="tickets.html">Abbrechen</a></p>
+
+</form>
+
+</section>
+
+
+<section id="bestaetigung" class="formular">
+
+<h2>Vielen Dank für Ihre Anmeldung!</h2>
+
+<p>
+Vielen Dank für Ihr Interesse an einem Event von <strong>EventHub</strong>.
+</p>
+
+<p>
+Leider gibt es keine Tickets für dieses Event,
+da es sich um ein <strong>fiktives Schulprojekt</strong> handelt.
+</p>
+
+<p>
+Dieses Formular dient ausschliesslich zu Lernzwecken.
+</p>
+
+<p><a href="tickets.html">Zurück zur Übersicht</a></p>
+
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 EventHub</p>
+<p>Alle Rechte vorbehalten</p>
+</footer>
+
+</body>
+</html>
