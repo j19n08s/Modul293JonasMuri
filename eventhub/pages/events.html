@@ -11,8 +11,9 @@
 
 <header>
 <h1>Events</h1>
+<div class="burger" onclick="toggleMenu()">☰</div>
 <nav>
-<ul>
+<ul id="menu">
 <li><a href="../index.html">Start</a></li>
 <li><a href="tickets.html">Tickets</a></li>
 <li><a href="events.html">Events</a></li>
@@ -259,6 +260,10 @@ width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ref
 <p>&copy; 2026 EventHub</p>
 <p>Alle Rechte vorbehalten</p>
 </footer>
-
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
 </body>
 </html>

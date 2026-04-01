@@ -14,8 +14,9 @@
 
 <h1>Event Übersicht</h1>
 
+<div class="burger" onclick="toggleMenu()">☰</div>
 <nav>
-<ul>
+<ul id="""menu">
 <li><a href="index.html">Start</a></li>
 <li><a href="pages/tickets.html">Tickets</a></li>
 <li><a href="pages/events.html">Events</a></li>
@@ -75,6 +76,10 @@ Stöbern Sie durch unser Angebot und sichern Sie sich Ihre Tickets für unverges
 </section>
 
 </main>
-
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
 </body>
 </html>
