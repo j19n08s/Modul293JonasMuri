@@ -92,19 +92,16 @@ footer {
 
 @media (max-width: 600px) {
 
-  /* NAV verstecken */
   nav ul {
     display: none;
     flex-direction: column;
     align-items: center;
   }
 
-  /* sichtbar wenn aktiv */
   nav ul.active {
     display: flex;
   }
 
-  /* Burger anzeigen */
   .burger {
     display: block;
   }
